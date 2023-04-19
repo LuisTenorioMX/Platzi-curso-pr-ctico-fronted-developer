@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./Logos/favicon_bota_fora.svg" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #000000;
+        --Very-light-pink: #c7c7c7;
+        --Text-input-field: #f7f7f7;
+        --Hospital-green: #acd9b2;
+        --Dark: #232830;
+        --pq: 14px;
+        --md: 16px;
+        --gd: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+        font-family: "Roboto", sans-serif;
+      }
+      .page {
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: grid;
+        place-items: center;
+      }
+      .container {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        width: 25%;
+      }
+      .container__title {
+        font-size: var(--gd);
+        margin-bottom: 36px;
+        margin-top: 36px;
+        text-align: left;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+      }
+      .form div {
+        display: flex;
+        flex-direction: column;
+      }
+      .form__label {
+        font-size: var(--pq);
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+      .form__p-input {
+        color: var(--Very-light-pink);
+        font-size: var(--md);
+        margin: 8px 0px 32px 0px;
+      }
+      .button {
+        border-radius: 8px;
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+      }
+      .button--form {
+        margin-bottom: 30px;
+      }
+      .button--white {
+        background-color: var(--white);
+        border: var(--Hospital-green) solid 1px;
+        color: var(--Hospital-green);
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          width: 90%;
+          height: 100%;
+        }
+        .form {
+          height: 100%;
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <h1 class="container__title">My account</h1>
+        <form class="form" action="/">
+          <div>
+            <label class="form__label" for="name">Name</label>
+            <p class="form__p-input">camila Yokoo</p>
+            <label class="form__label" for="Email">Email address</label>
+            <p class="form__p-input">camilayokoo@gmail.com</p>
+            <label class="form__label" for="password">Password</label>
+            <p class="form__p-input">********</p>
+          </div>
+          <input
+            class="button button--form button--white"
+            type="submit"
+            value="Edit"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

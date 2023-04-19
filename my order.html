@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./Logos/favicon_bota_fora.svg" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My order</title>
+    <style>
+      :root {
+        --Very-light-pink: #c7c7c7;
+        --Hospital-green: #acd9b2;
+        --white: #ffffff;
+        --Dark: #232830;
+        --Text-input-field: #f7f7f7;
+        --black: #000000;
+        --pq: 14px;
+        --md: 16px;
+        --gd: 18px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+      .page {
+        display: flex;
+        justify-content: center;
+      }
+      .main-container {
+        padding: 24px;
+        width: 33.3333%;
+      }
+      .title {
+        font-size: var(--gd);
+        display: inline-block;
+        padding: 60px 0 40px;
+      }
+      .information-container {
+        background: var(--Text-input-field);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px;
+      }
+      .cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px 0 0;
+      }
+      .card-container {
+        display: flex;
+      }
+      .card-container__info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px;
+      }
+      .information-container--negrita {
+        font-weight: bold;
+      }
+      .text {
+        font-size: var(--pq);
+        color: var(--Very-light-pink);
+      }
+      .card-container__img {
+        width: 100px;
+        height: 100px;
+        border-radius: 20%;
+        object-fit: cover;
+      }
+      @media (max-width: 640px) {
+        .title {
+          display: none;
+        }
+        .main-container {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="main-container">
+        <h1 class="title">My order</h1>
+        <div class="information-container">
+          <div class="information-container__text">
+            <p class="information-container--negrita">04.25.2021</p>
+            <p class="text">6 articles</p>
+          </div>
+          <p class="information-container--negrita">$560.00</p>
+        </div>
+        <div class="cards-container">
+          <figure class="card-container">
+            <img
+              class="card-container__img"
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="img"
+            />
+            <figcaption class="card-container__info">
+              <p class="text">Bike</p>
+              <p class="information-container--negrita">$120,00</p>
+            </figcaption>
+          </figure>
+          <figure class="card-container">
+            <img
+              class="card-container__img"
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="img"
+            />
+            <figcaption class="card-container__info">
+              <p class="text">Bike</p>
+              <p class="information-container--negrita">$120,00</p>
+            </figcaption>
+          </figure>
+          <figure class="card-container">
+            <img
+              class="card-container__img"
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="img"
+            />
+            <figcaption class="card-container__info">
+              <p class="text">Bike</p>
+              <p class="information-container--negrita">$120,00</p>
+            </figcaption>
+          </figure>
+          <figure class="card-container">
+            <img
+              class="card-container__img"
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="img"
+            />
+            <figcaption class="card-container__info">
+              <p class="text">Bike</p>
+              <p class="information-container--negrita">$120,00</p>
+            </figcaption>
+          </figure>
+          <figure class="card-container">
+            <img
+              class="card-container__img"
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="img"
+            />
+            <figcaption class="card-container__info">
+              <p class="text">Bike</p>
+              <p class="information-container--negrita">$120,00</p>
+            </figcaption>
+          </figure>
+          <figure class="card-container">
+            <img
+              class="card-container__img"
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="img"
+            />
+            <figcaption class="card-container__info">
+              <p class="text">Bike</p>
+              <p class="information-container--negrita">$120,00</p>
+            </figcaption>
+          </figure>
+          <figure class="card-container">
+            <img
+              class="card-container__img"
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="img"
+            />
+            <figcaption class="card-container__info">
+              <p class="text">Bike</p>
+              <p class="information-container--negrita">$120,00</p>
+            </figcaption>
+          </figure>
+          <figure class="card-container">
+            <img
+              class="card-container__img"
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="img"
+            />
+            <figcaption class="card-container__info">
+              <p class="text">Bike</p>
+              <p class="information-container--negrita">$120,00</p>
+            </figcaption>
+          </figure>
+          <figure class="card-container">
+            <img
+              class="card-container__img"
+              src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt="img"
+            />
+            <figcaption class="card-container__info">
+              <p class="text">Bike</p>
+              <p class="information-container--negrita">$120,00</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

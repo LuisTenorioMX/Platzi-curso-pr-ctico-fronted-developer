@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My orders</title>
+    <style>
+      :root {
+        --Very-light-pink: #c7c7c7;
+        --Hospital-green: #acd9b2;
+        --white: #ffffff;
+        --Dark: #232830;
+        --Text-input-field: #f7f7f7;
+        --black: #000000;
+        --pq: 14px;
+        --md: 16px;
+        --gd: 18px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+      .page {
+        display: flex;
+        justify-content: center;
+      }
+      .main-container {
+        padding: 24px;
+        width: 33.3333%;
+      }
+      .title {
+        font-size: var(--gd);
+        display: inline-block;
+        padding: 90px 0 40px;
+      }
+      .information-containers{
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+      }
+      .information-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .information-containter__price{
+          display: flex;
+          gap: 20px;
+      }
+      .information-container--negrita {
+        font-weight: bold;
+      }
+      .text {
+        font-size: var(--pq);
+        color: var(--Very-light-pink);
+      }
+      @media (max-width: 640px) {
+        .title {
+          display: none;
+        }
+        .main-container {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+        <div class="main-container">
+          <h1 class="title">My orders</h1>
+          <div class="information-containers">
+              <div class="information-container">
+                <div class="information-container__text">
+                  <p class="information-container--negrita">04.25.2021</p>
+                  <p class="text">6 articles</p>
+                </div>
+                <div class="information-containter__price">
+                    <p class="information-container--negrita">$560.00</p>
+                    <img src="./Icons/flechita.svg" alt="arrow">
+                </div>   
+              </div>
+              <div class="information-container">
+                <div class="information-container__text">
+                  <p class="information-container--negrita">04.25.2021</p>
+                  <p class="text">6 articles</p>
+                </div>
+                <div class="information-containter__price">
+                    <p class="information-container--negrita">$560.00</p>
+                    <img src="./Icons/flechita.svg" alt="arrow">
+                </div>   
+              </div>
+              <div class="information-container">
+                <div class="information-container__text">
+                  <p class="information-container--negrita">04.25.2021</p>
+                  <p class="text">6 articles</p>
+                </div>
+                <div class="information-containter__price">
+                    <p class="information-container--negrita">$560.00</p>
+                    <img src="./Icons/flechita.svg" alt="arrow">
+                </div>   
+              </div>
+              <div class="information-container">
+                <div class="information-container__text">
+                  <p class="information-container--negrita">04.25.2021</p>
+                  <p class="text">6 articles</p>
+                </div>
+                <div class="information-containter__price">
+                    <p class="information-container--negrita">$560.00</p>
+                    <img src="./Icons/flechita.svg" alt="arrow">
+                </div>   
+              </div>
+              <div class="information-container">
+                <div class="information-container__text">
+                  <p class="information-container--negrita">04.25.2021</p>
+                  <p class="text">6 articles</p>
+                </div>
+                <div class="information-containter__price">
+                    <p class="information-container--negrita">$560.00</p>
+                    <img src="./Icons/flechita.svg" alt="arrow">
+                </div>   
+              </div>
+              <div class="information-container">
+                <div class="information-container__text">
+                  <p class="information-container--negrita">04.25.2021</p>
+                  <p class="text">6 articles</p>
+                </div>
+                <div class="information-containter__price">
+                    <p class="information-container--negrita">$560.00</p>
+                    <img src="./Icons/flechita.svg" alt="arrow">
+                </div>   
+              </div>
+          </div>
+        </div>
+  </body>
+</html>

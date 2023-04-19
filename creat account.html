@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./Logos/favicon_bota_fora.svg" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create account</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #000000;
+        --Very-light-pink: #c7c7c7;
+        --Text-input-field: #f7f7f7;
+        --Hospital-green: #acd9b2;
+        --Dark: #232830;
+        --pq: 14px;
+        --md: 16px;
+        --gd: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+        font-family: "Roboto", sans-serif;
+      }
+      .page {
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: grid;
+        place-items: center;
+      }
+      .container {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        width: 25%;
+      }
+      .container__title {
+        font-size: var(--gd);
+        margin-bottom: 36px;
+        margin-top: 36px;
+        text-align: left;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+      }
+      .form div {
+        display: flex;
+        flex-direction: column;
+      }
+      .form__label {
+        font-size: var(--pq);
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+      .form__input {
+        background-color: var(--Text-input-field);
+        border: none;
+        border-radius: 8px;
+        height: 30px;
+        font-size: var(--md);
+        padding: 6px;
+        margin-bottom: 12px;
+      }
+      .button {
+        border-radius: 8px;
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+      }
+      .button--green {
+        background-color: var(--Hospital-green);
+        border: none;
+        color: var(--white);
+      }
+      .button--form {
+        margin-bottom: 30px;
+      }
+      @media (max-width: 640px) {
+        .container {
+          width: 90%;
+          height: 100%;
+        }
+        .form {
+          height: 100%;
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <h1 class="container__title">My account</h1>
+        <form class="form" action="/">
+          <div>
+            <label class="form__label" for="name">Name</label>
+            <input
+              class="form__input"
+              id="name"
+              type="text"
+              placeholder="Kazou tenorio"
+              required
+            />
+            <label class="form__label" for="Email">Email address</label>
+            <input
+              class="form__input"
+              id="Email"
+              type="email"
+              placeholder="ejemplo@dominio.com"
+              required
+            />
+            <label class="form__label" for="password">Password</label>
+            <input
+              class="form__input"
+              id="password"
+              type="password"
+              placeholder="********"
+              required
+            />
+          </div>
+          <input
+            class="button button--form button--green"
+            type="submit"
+            value="Create account"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

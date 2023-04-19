@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --Very-light-pink: #c7c7c7;
+        --Hospital-green: #acd9b2;
+        --white: #ffffff;
+        --Dark: #232830;
+        --Text-input-field: #f7f7f7;
+        --black: #000000;
+        --pq: 14px;
+        --md: 16px;
+        --gd: 18px;
+      }
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .aside {
+        width: 341.698px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+      }
+      .imga-close-container {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        border-radius: 50%;
+        background: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .img-product {
+        width: 100%;
+        height: 341.68px;
+        object-fit: cover;
+        border-radius: 0 0 20px 20px;
+      }
+      .button {
+        height: 50px;
+        width: 90%;
+        background: var(--Hospital-green);
+        border: none;
+        border-radius: 8px;
+        color: var(--white);
+        font-size: var(--md);
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 14px;
+      }
+      .point-container {
+        width: 100%;
+        padding: 10px 0 20px;
+        display: flex;
+        gap: 4px;
+        justify-content: center;
+        align-items: center;
+      }
+      .point-container__point {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+      }
+      .point-container--light {
+        background-color: var(--Text-input-field);
+      }
+      .point-container--gray {
+        background: var(--Very-light-pink);
+      }
+      .information {
+        width: 90%;
+      }
+      .information__price {
+        font-weight: bold;
+        padding: 0 0 5px;
+      }
+      .information--thin {
+        font-weight: 300;
+      }
+      .information__product {
+        padding: 0 0 15px;
+      }
+      @media (max-width: 640px) {
+        .imga-close-container {
+          display: none;
+        }
+        .aside {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="aside">
+      <div class="imga-close-container">
+        <img
+          class="imga-close-container__img"
+          src="./Icons/icon_close.png"
+          alt="close"
+        />
+      </div>
+      <img
+        class="img-product"
+        src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt="product"
+      />
+      <div class="point-container">
+        <div class="point-container__point point-container--gray"></div>
+        <div class="point-container__point point-container--light"></div>
+        <div class="point-container__point point-container--light"></div>
+      </div>
+      <div class="information">
+        <p class="information__price">$ 120,00</p>
+        <p class="information__product information--thin">byke</p>
+        <p class="information__text information--thin">
+          With its functional and practical design, this bike also fulfills a
+          decorative function, adding personality and a retro-vintage aesthetic
+          to your house.
+        </p>
+      </div>
+      <button class="button">
+        <img src="./Icons/bt_add_to_cart.svg" alt="add to cart" />Add to cart
+      </button>
+    </aside>
+  </body>
+</html>

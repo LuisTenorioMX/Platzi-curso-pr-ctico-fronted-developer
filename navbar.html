@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./Logos/favicon_bota_fora.svg" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>navbar</title>
+    <style>
+      :root {
+        --Very-light-pink: #c7c7c7;
+        --Hospital-green: #acd9b2;
+        --white: #ffffff;
+        --Dark: #232830;
+        --Text-input-field: #f7f7f7;
+        --black: #000000;
+        --pq: 14px;
+        --md: 16px;
+        --gd: 18px;
+      }
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        padding: 0 24px;
+        box-sizing: border-box;
+        border-bottom: solid var(--Text-input-field) 3px;
+      }
+      .navbar__menu {
+        display: none;
+      }
+      .navbar__left__logo {
+        width: 150px;
+        margin-right: 34px;
+      }
+      .navbar__left,
+      .navbar__left__container-text,
+      .navbar__right__container {
+        display: flex;
+        align-items: center;
+      }
+      .navbar__li {
+        list-style: none;
+      }
+      .navbar__li__correo {
+        margin-right: 20px;
+        font-size: var(--pq);
+      }
+      .navbar__a {
+        text-decoration: none;
+        color: var(--Very-light-pink);
+        border: 1px solid var(--white);
+        padding: 8px;
+        border-radius: 8px;
+      }
+      .navbar__a--hover:hover {
+        border: 1px solid var(--Hospital-green);
+        color: var(--Hospital-green);
+      }
+      .navbar__li--img {
+        position: relative;
+      }
+      .navbar__li--img div {
+        width: 11px;
+        height: 11px;
+        background-color: var(--Hospital-green);
+        border-radius: 50%;
+        font-size: 10px;
+        font-weight: bold;
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 640px) {
+        .navbar__menu {
+          display: block;
+        }
+        .navbar__li:not(.navbar__li--img) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img class="navbar__menu" src="./Icons/icon_menu.svg" alt="menu" />
+      <div class="navbar__left">
+        <img
+          class="navbar__left__logo"
+          src="./Logos/logo_yard_sale.svg"
+          alt="logo"
+        />
+        <ul class="navbar__left__container-text">
+          <li class="navbar__li">
+            <a class="navbar__a navbar__a--hover" href="">All</a>
+          </li>
+          <li class="navbar__li">
+            <a class="navbar__a navbar__a--hover" href="">Clothes</a>
+          </li>
+          <li class="navbar__li">
+            <a class="navbar__a navbar__a--hover" href="">Electronics</a>
+          </li>
+          <li class="navbar__li">
+            <a class="navbar__a navbar__a--hover" href="">Furniture</a>
+          </li>
+          <li class="navbar__li">
+            <a class="navbar__a navbar__a--hover" href="">Toys</a>
+          </li>
+          <li class="navbar__li">
+            <a class="navbar__a navbar__a--hover" href="">Others</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar__right">
+        <ul class="navbar__right__container">
+          <li class="navbar__li navbar__li__correo">platzi@example.com</li>
+          <li class="navbar__li navbar__li--img">
+            <img
+              class="navbar__right__img-container__img"
+              src="./Icons/icon_shopping_cart.svg"
+              alt="shopping cart"
+            />
+            <div class="navbar__right__contador">2</div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
